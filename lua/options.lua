@@ -15,8 +15,9 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.undofile = true
 
-
 vim.g.mapleader = " "
 
 
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
+vim.keymap.set("n", "<Leader><Space>", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+vim.keymap.set("n", "-", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open parent directory" })
