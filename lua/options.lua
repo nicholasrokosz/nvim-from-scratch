@@ -14,6 +14,7 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.undofile = true
+vim.opt.signcolumn = "yes"
 
 vim.g.mapleader = " "
 
