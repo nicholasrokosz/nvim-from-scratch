@@ -26,11 +26,6 @@ require("lazy").setup({
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        -- lazy = false,
-        -- priority = 1000,
-        -- config = function()
-        --     vim.cmd('colorscheme catppuccin-latte')
-        -- end,
     },
     {
         "nvim-treesitter/nvim-treesitter",
@@ -115,11 +110,6 @@ require("lazy").setup({
         event = "InsertEnter",
         opts = {} -- this is equalent to setup({}) function
     },
-    -- {
-    --     'stevearc/oil.nvim',
-    --     opts = {},
-    --     dependencies = { "nvim-tree/nvim-web-devicons" },
-    -- }
     {
         'echasnovski/mini.files',
         version = '*',
@@ -141,5 +131,10 @@ require("lazy").setup({
         config = function ()
             require('gitsigns').setup()
         end
+    },
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {},
     },
 })
