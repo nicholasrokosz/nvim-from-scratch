@@ -20,6 +20,7 @@ vim.g.mapleader = " "
 
 
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
+vim.keymap.set({ "i", "x", "n", "s" }, "<C-q>", "<cmd>wq<cr><esc>", { desc = "Save and quit" })
 vim.keymap.set("n", "<Leader><Space>", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "-", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<Escape>", "<CMD>nohlsearch<CR>", { desc = "Clear search highlights" })
@@ -46,7 +47,7 @@ vim.keymap.set("v", ">", ">gv", opts)
 
 -- intuitive increment/decrement
 vim.keymap.set("n", "+", "<C-a>")
-vim.keymap.set("n", "-", "<C-x>")
+-- vim.keymap.set("n", "-", "<C-x>")
 
 -- select all lines in a file
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
