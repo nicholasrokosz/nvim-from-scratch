@@ -22,6 +22,7 @@ vim.g.mapleader = " "
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-q>", "<cmd>wq<cr><esc>", { desc = "Save and quit" })
 vim.keymap.set("n", "<Escape>", "<CMD>nohlsearch<CR>", { desc = "Clear search highlights" })
+vim.keymap.set("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Lazy" })
 
 -- copied from old config
 local opts = { noremap = true, silent = true }
