@@ -21,10 +21,7 @@ vim.g.mapleader = " "
 
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-q>", "<cmd>wq<cr><esc>", { desc = "Save and quit" })
-vim.keymap.set("n", "<Leader><Space>", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
-vim.keymap.set("n", "-", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<Escape>", "<CMD>nohlsearch<CR>", { desc = "Clear search highlights" })
-vim.keymap.set("n", "<Leader>e", "<cmd>Neotree toggle<cr>", { desc = "Clear search highlights" })
 
 -- copied from old config
 local opts = { noremap = true, silent = true }
