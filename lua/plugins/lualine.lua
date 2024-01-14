@@ -5,6 +5,7 @@ return {
         require("lualine").setup({
             options = {
                 globalstatus = false,
+                disabled_filetypes = { "alpha" },
             },
         })
     end,
