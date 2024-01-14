@@ -24,6 +24,8 @@ vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Sav
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-q>", "<cmd>wq<cr><esc>", { desc = "Save and quit" })
 vim.keymap.set("n", "<Escape>", "<CMD>nohlsearch<CR>", { desc = "Clear search highlights" })
 vim.keymap.set("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Lazy" })
+vim.keymap.set("n", "H", "<CMD>bnext<CR>", { desc = "Go to next buffer" })
+vim.keymap.set("n", "L", "<CMD>bprevious<CR>", { desc = "Go to previous buffer" })
 
 -- copied from old config
 local opts = { noremap = true, silent = true }
