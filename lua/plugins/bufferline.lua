@@ -8,6 +8,7 @@ return {
 			options = {
 				style_preset = bufferline.style_preset.minimal,
 				show_buffer_close_icons = false,
+                always_show_bufferline = false,
 				offsets = {
 					{
 						filetype = "neo-tree",
