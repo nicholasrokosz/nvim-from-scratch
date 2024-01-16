@@ -25,6 +25,7 @@ vim.keymap.set("n", "<Escape>", "<CMD>nohlsearch<CR>", { desc = "Clear search hi
 vim.keymap.set("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Lazy" })
 vim.keymap.set("n", "L", "<CMD>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "H", "<CMD>bprevious<CR>", { desc = "Go to previous buffer" })
+vim.keymap.set("n", "<space>bb", "<CMD>bdelete<CR>", { desc = "Close buffer" })
 
 -- copied from old config
 local opts = { noremap = true, silent = true }
